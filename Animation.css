@@ -1,0 +1,60 @@
+div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition:transform 2s 0.5s;
+}
+#d1{
+    background-color:red;
+    animation-name:expel;
+    animation-duration:4s;
+    
+}
+#d2{
+    background-color:yellow;
+    animation-name:expel2;
+    animation-duration:4s;
+}
+#d3{
+    background-color:black;
+    animation-name:expl3;
+    animation-duration: 10s;
+    animation-delay: -2;
+    position: relative;
+    animation-iteration-count: 3;
+    animation-direction:alternate-reverse;
+    animation-fill-mode: forwards;
+}
+#d4{
+    background-color:blue;
+
+}
+
+@keyframes expel {
+    from{background-color:pink; }to{background-color:goldenrod;}
+}
+@keyframes expel2{0% {background-color:green;}
+                     25%{background-color:red;}
+                     50%{background-color:yellow;}75%
+                     {background-color:red}
+                     100%{background-color:orange}
+    
+}
+@keyframes expl3{
+    25%{background-color:red;
+    transform: translateX(200px);
+    }
+    50%{background-color:yellow;
+    transform:translate(200px ,200px);
+    }
+    75%{background-color:red;
+    transform:translateY(200px)    
+    }
+    100%{background-color:orange;
+    transform:translate(0px, 0px);
+    }
+
+}
+#d3:hover{
+    animation-play-state: paused;
+}

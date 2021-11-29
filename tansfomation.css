@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+#d1{
+    background-color:red;
+    /* Transfomation*/
+    transform: scale(0.5, 2);}
+#d2{
+    background-color:yellow;
+    transform:translate(120px,50%);
+}
+#d3{
+    background-color:black;
+    transform: skew(30deg, 20deg);
+}
+#d4{
+    background-color:blue;
+    /*transform: matrix(1, 0, 0, 10, 6, 6);*/
+}
